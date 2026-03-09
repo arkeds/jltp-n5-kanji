@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JLPT N5 Kanji Grid</title>
 
 <style>
@@ -39,6 +40,12 @@ h1{
 .kunyomi{ color:#666; font-size:14px; }
 .meaning{ color:#888; font-size:14px; }
 .number{ font-size:12px; color:#aaa; }
+
+@media (max-width: 600px) {
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 </style>
 </head>
 
